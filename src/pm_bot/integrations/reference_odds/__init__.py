@@ -1,0 +1,1 @@
+"""Reference odds integration adapters."""

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polymarket Bot V3</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4efe5;
+        --panel: #fffaf1;
+        --ink: #1f2a24;
+        --muted: #67756d;
+        --accent: #0f6c57;
+        --danger: #a63d40;
+        --border: #d9cfbe;
+      }
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        background: radial-gradient(circle at top, #fff9ef 0%, var(--bg) 70%);
+        color: var(--ink);
+      }
+      main {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 32px 20px 48px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 2.4rem;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 12px;
+        margin: 24px 0;
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 16px;
+        box-shadow: 0 10px 30px rgba(31, 42, 36, 0.06);
+      }
+      .label {
+        font-size: 0.85rem;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      .value {
+        margin-top: 6px;
+        font-size: 1.5rem;
+      }
+      .status-running {
+        color: var(--accent);
+      }
+      .status-stopped {
+        color: var(--danger);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 24px;
+        background: var(--panel);
+        border-radius: 16px;
+        overflow: hidden;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 12px 14px;
+        border-bottom: 1px solid var(--border);
+      }
+      th {
+        color: var(--muted);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      .empty {
+        margin-top: 24px;
+        padding: 24px;
+        border: 1px dashed var(--border);
+        border-radius: 16px;
+        background: rgba(255, 250, 241, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Polymarket Bot V3</h1>
+      {% if snapshot %}
+      <p class="muted">
+        Stage {{ snapshot.validation_stage.value }} · Mode {{ snapshot.runtime_mode.value }} ·
+        Updated {{ snapshot.updated_at.isoformat() }}
+      </p>
+      <section class="grid">
+        <article class="card">
+          <div class="label">Total Capital</div>
+          <div class="value">{{ "%.2f"|format(snapshot.total_capital) }}</div>
+        </article>
+        <article class="card">
+          <div class="label">Today</div>
+          <div class="value">{{ "%.2f"|format(snapshot.realized_pnl_today + snapshot.unrealized_pnl_today) }}</div>
+        </article>
+        <article class="card">
+          <div class="label">Week</div>
+          <div class="value">{{ "%.2f"|format(snapshot.realized_pnl_week) }}</div>
+        </article>
+        <article class="card">
+          <div class="label">Month</div>
+          <div class="value">{{ "%.2f"|format(snapshot.realized_pnl_month) }}</div>
+        </article>
+        <article class="card">
+          <div class="label">Session</div>
+          <div class="value {% if snapshot.session_status.value == 'stopped_for_day' %}status-stopped{% else %}status-running{% endif %}">
+            {{ snapshot.session_status.value }}
+          </div>
+        </article>
+        <article class="card">
+          <div class="label">Open Positions</div>
+          <div class="value">{{ snapshot.open_positions_count }}</div>
+        </article>
+      </section>
+      {% else %}
+      <div class="empty">
+        No dashboard snapshot yet. Run local validation or paper canary first.
+      </div>
+      {% endif %}
+
+      {% if latest_session %}
+      <div class="card">
+        <div class="label">Latest Session</div>
+        <div class="value">{{ latest_session.session_date.isoformat() }}</div>
+        <p class="muted">
+          Stop reason: {{ latest_session.stop_reason or "none" }} · Reconcile:
+          {{ latest_session.last_reconcile_at.isoformat() if latest_session.last_reconcile_at else "never" }}
+        </p>
+      </div>
+      {% endif %}
+
+      {% if positions %}
+      <table>
+        <thead>
+          <tr>
+            <th>Market</th>
+            <th>Outcome</th>
+            <th>State</th>
+            <th>Exposure</th>
+            <th>Unrealized</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for position in positions %}
+          <tr>
+            <td>{{ position.market_title }}</td>
+            <td>{{ position.outcome_label }}</td>
+            <td>{{ position.state.value }}</td>
+            <td>{{ "%.2f"|format(position.exposure) }}</td>
+            <td>{{ "%.2f"|format(position.unrealized_pnl) }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% endif %}
+    </main>
+  </body>
+</html>

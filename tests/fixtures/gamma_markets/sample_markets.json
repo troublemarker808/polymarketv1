@@ -1,0 +1,41 @@
+[
+  {
+    "id": "m-100",
+    "eventId": "e-100",
+    "question": "Will Team A beat Team B?",
+    "category": "Sports",
+    "active": true,
+    "closed": false,
+    "liquidityNum": 120000,
+    "gameStartTime": "2026-04-08T09:00:00Z",
+    "endDate": "2026-04-09T03:00:00Z",
+    "outcomes": ["Team A", "Team B"],
+    "outcomePrices": [0.61, 0.39]
+  },
+  {
+    "id": "m-200",
+    "eventId": "e-200",
+    "question": "Will Team C draw with Team D?",
+    "category": "Sports",
+    "active": true,
+    "closed": false,
+    "liquidityNum": 90000,
+    "gameStartTime": "2026-04-08T09:00:00Z",
+    "endDate": "2026-04-09T03:00:00Z",
+    "outcomes": ["Team C", "Draw", "Team D"],
+    "outcomePrices": [0.4, 0.25, 0.35]
+  },
+  {
+    "id": "m-300",
+    "eventId": "e-300",
+    "question": "Will Candidate X win in November?",
+    "category": "Politics",
+    "active": true,
+    "closed": false,
+    "liquidityNum": 500000,
+    "gameStartTime": "2026-04-08T09:00:00Z",
+    "endDate": "2026-06-15T03:00:00Z",
+    "outcomes": ["Yes", "No"],
+    "outcomePrices": [0.55, 0.45]
+  }
+]

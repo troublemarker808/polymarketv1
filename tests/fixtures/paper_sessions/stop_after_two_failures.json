@@ -1,0 +1,180 @@
+{
+  "snapshots": [
+    {
+      "timestamp": "2026-04-08T09:00:00Z",
+      "gamma_markets": [
+        {
+          "id": "m-200",
+          "eventId": "e-200",
+          "question": "Will Team C beat Team D?",
+          "category": "Sports",
+          "active": true,
+          "closed": false,
+          "liquidityNum": 95000,
+          "gameStartTime": "2026-04-08T23:00:00Z",
+          "endDate": "2026-04-10T03:00:00Z",
+          "outcomes": ["Team C", "Team D"],
+          "outcomePrices": [0.60, 0.40]
+        }
+      ],
+      "reference_events": [
+        {
+          "id": "ref-200",
+          "sport_key": "soccer_epl",
+          "commence_time": "2026-04-08T23:00:00Z",
+          "home_team": "Team C",
+          "away_team": "Team D",
+          "bookmakers": [
+            {
+              "key": "draftkings",
+              "title": "DraftKings",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T08:55:00Z", "outcomes": [{"name": "Team C", "price": 1.48}, {"name": "Team D", "price": 2.78}]}]
+            },
+            {
+              "key": "fanduel",
+              "title": "FanDuel",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T08:55:00Z", "outcomes": [{"name": "Team C", "price": 1.49}, {"name": "Team D", "price": 2.76}]}]
+            },
+            {
+              "key": "betmgm",
+              "title": "BetMGM",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T08:55:00Z", "outcomes": [{"name": "Team C", "price": 1.47}, {"name": "Team D", "price": 2.8}]}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-08T14:30:00Z",
+      "gamma_markets": [
+        {
+          "id": "m-200",
+          "eventId": "e-200",
+          "question": "Will Team C beat Team D?",
+          "category": "Sports",
+          "active": true,
+          "closed": false,
+          "liquidityNum": 95000,
+          "gameStartTime": "2026-04-08T23:00:00Z",
+          "endDate": "2026-04-10T03:00:00Z",
+          "outcomes": ["Team C", "Team D"],
+          "outcomePrices": [0.63, 0.37]
+        }
+      ],
+      "reference_events": [
+        {
+          "id": "ref-200",
+          "sport_key": "soccer_epl",
+          "commence_time": "2026-04-08T23:00:00Z",
+          "home_team": "Team C",
+          "away_team": "Team D",
+          "bookmakers": [
+            {
+              "key": "draftkings",
+              "title": "DraftKings",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T14:25:00Z", "outcomes": [{"name": "Team C", "price": 1.56}, {"name": "Team D", "price": 2.5}]}]
+            },
+            {
+              "key": "fanduel",
+              "title": "FanDuel",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T14:25:00Z", "outcomes": [{"name": "Team C", "price": 1.57}, {"name": "Team D", "price": 2.48}]}]
+            },
+            {
+              "key": "betmgm",
+              "title": "BetMGM",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T14:25:00Z", "outcomes": [{"name": "Team C", "price": 1.55}, {"name": "Team D", "price": 2.52}]}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-08T15:00:00Z",
+      "gamma_markets": [
+        {
+          "id": "m-200",
+          "eventId": "e-200",
+          "question": "Will Team C beat Team D?",
+          "category": "Sports",
+          "active": true,
+          "closed": false,
+          "liquidityNum": 95000,
+          "gameStartTime": "2026-04-08T23:00:00Z",
+          "endDate": "2026-04-10T03:00:00Z",
+          "outcomes": ["Team C", "Team D"],
+          "outcomePrices": [0.59, 0.41]
+        }
+      ],
+      "reference_events": [
+        {
+          "id": "ref-200",
+          "sport_key": "soccer_epl",
+          "commence_time": "2026-04-08T23:00:00Z",
+          "home_team": "Team C",
+          "away_team": "Team D",
+          "bookmakers": [
+            {
+              "key": "draftkings",
+              "title": "DraftKings",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T14:55:00Z", "outcomes": [{"name": "Team C", "price": 1.46}, {"name": "Team D", "price": 2.84}]}]
+            },
+            {
+              "key": "fanduel",
+              "title": "FanDuel",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T14:55:00Z", "outcomes": [{"name": "Team C", "price": 1.47}, {"name": "Team D", "price": 2.82}]}]
+            },
+            {
+              "key": "betmgm",
+              "title": "BetMGM",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T14:55:00Z", "outcomes": [{"name": "Team C", "price": 1.45}, {"name": "Team D", "price": 2.86}]}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-08T20:00:00Z",
+      "gamma_markets": [
+        {
+          "id": "m-200",
+          "eventId": "e-200",
+          "question": "Will Team C beat Team D?",
+          "category": "Sports",
+          "active": true,
+          "closed": false,
+          "liquidityNum": 95000,
+          "gameStartTime": "2026-04-08T23:00:00Z",
+          "endDate": "2026-04-10T03:00:00Z",
+          "outcomes": ["Team C", "Team D"],
+          "outcomePrices": [0.62, 0.38]
+        }
+      ],
+      "reference_events": [
+        {
+          "id": "ref-200",
+          "sport_key": "soccer_epl",
+          "commence_time": "2026-04-08T23:00:00Z",
+          "home_team": "Team C",
+          "away_team": "Team D",
+          "bookmakers": [
+            {
+              "key": "draftkings",
+              "title": "DraftKings",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T19:55:00Z", "outcomes": [{"name": "Team C", "price": 1.58}, {"name": "Team D", "price": 2.46}]}]
+            },
+            {
+              "key": "fanduel",
+              "title": "FanDuel",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T19:55:00Z", "outcomes": [{"name": "Team C", "price": 1.57}, {"name": "Team D", "price": 2.48}]}]
+            },
+            {
+              "key": "betmgm",
+              "title": "BetMGM",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T19:55:00Z", "outcomes": [{"name": "Team C", "price": 1.59}, {"name": "Team D", "price": 2.45}]}]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

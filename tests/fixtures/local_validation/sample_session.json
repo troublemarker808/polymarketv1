@@ -1,0 +1,105 @@
+[
+  {
+    "event_id": "evt-1",
+    "occurred_at": "2026-04-08T09:00:00+00:00",
+    "event_type": "session_opened",
+    "aggregate_type": "session",
+    "aggregate_id": "2026-04-08",
+    "schema_version": 1,
+    "payload": {
+      "session_date": "2026-04-08",
+      "status": "cautious_start",
+      "updated_at": "2026-04-08T09:00:00+00:00"
+    }
+  },
+  {
+    "event_id": "evt-2",
+    "occurred_at": "2026-04-08T09:05:00+00:00",
+    "event_type": "probe_opened",
+    "aggregate_type": "position",
+    "aggregate_id": "pos-1",
+    "schema_version": 1,
+    "payload": {
+      "position_id": "pos-1",
+      "market_id": "mkt-1",
+      "market_title": "Example Match",
+      "outcome_label": "Team A",
+      "opened_at": "2026-04-08T09:05:00+00:00",
+      "confirmation_deadline": "2026-04-08T13:05:00+00:00",
+      "notional": 20.0,
+      "reference_event_id": null
+    }
+  },
+  {
+    "event_id": "evt-3",
+    "occurred_at": "2026-04-08T10:00:00+00:00",
+    "event_type": "probe_confirmed",
+    "aggregate_type": "position",
+    "aggregate_id": "pos-1",
+    "schema_version": 1,
+    "payload": {
+      "position_id": "pos-1",
+      "market_id": "mkt-1",
+      "confirmed_at": "2026-04-08T10:00:00+00:00",
+      "target_state": "confirmed_stage_1"
+    }
+  },
+  {
+    "event_id": "evt-4",
+    "occurred_at": "2026-04-08T11:00:00+00:00",
+    "event_type": "position_valuation_updated",
+    "aggregate_type": "position",
+    "aggregate_id": "pos-1",
+    "schema_version": 1,
+    "payload": {
+      "position_id": "pos-1",
+      "market_id": "mkt-1",
+      "valued_at": "2026-04-08T11:00:00+00:00",
+      "state": "confirmed_stage_1",
+      "exposure": 20.0,
+      "unrealized_pnl": 3.5
+    }
+  },
+  {
+    "event_id": "evt-5",
+    "occurred_at": "2026-04-08T11:30:00+00:00",
+    "event_type": "reconcile_recorded",
+    "aggregate_type": "session",
+    "aggregate_id": "2026-04-08",
+    "schema_version": 1,
+    "payload": {
+      "session_date": "2026-04-08",
+      "recorded_at": "2026-04-08T11:30:00+00:00",
+      "summary": "positions aligned",
+      "positions_in_sync": true
+    }
+  },
+  {
+    "event_id": "evt-6",
+    "occurred_at": "2026-04-08T12:00:00+00:00",
+    "event_type": "position_closed",
+    "aggregate_type": "position",
+    "aggregate_id": "pos-1",
+    "schema_version": 1,
+    "payload": {
+      "position_id": "pos-1",
+      "market_id": "mkt-1",
+      "closed_at": "2026-04-08T12:00:00+00:00",
+      "realized_pnl": 8.0,
+      "close_reason": "take_profit"
+    }
+  },
+  {
+    "event_id": "evt-7",
+    "occurred_at": "2026-04-08T14:00:00+00:00",
+    "event_type": "session_stopped",
+    "aggregate_type": "session",
+    "aggregate_id": "2026-04-08",
+    "schema_version": 1,
+    "payload": {
+      "session_date": "2026-04-08",
+      "reason": "two probe failures threshold reached",
+      "stopped_at": "2026-04-08T14:00:00+00:00"
+    }
+  }
+]

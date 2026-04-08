@@ -1,0 +1,180 @@
+{
+  "snapshots": [
+    {
+      "timestamp": "2026-04-08T09:00:00Z",
+      "gamma_markets": [
+        {
+          "id": "m-100",
+          "eventId": "e-100",
+          "question": "Will Team A beat Team B?",
+          "category": "Sports",
+          "active": true,
+          "closed": false,
+          "liquidityNum": 120000,
+          "gameStartTime": "2026-04-08T20:00:00Z",
+          "endDate": "2026-04-09T03:00:00Z",
+          "outcomes": ["Team A", "Team B"],
+          "outcomePrices": [0.58, 0.42]
+        }
+      ],
+      "reference_events": [
+        {
+          "id": "ref-1",
+          "sport_key": "soccer_epl",
+          "commence_time": "2026-04-08T20:00:00Z",
+          "home_team": "Team A",
+          "away_team": "Team B",
+          "bookmakers": [
+            {
+              "key": "draftkings",
+              "title": "DraftKings",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T08:55:00Z", "outcomes": [{"name": "Team A", "price": 1.5}, {"name": "Team B", "price": 2.7}]}]
+            },
+            {
+              "key": "fanduel",
+              "title": "FanDuel",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T08:55:00Z", "outcomes": [{"name": "Team A", "price": 1.52}, {"name": "Team B", "price": 2.65}]}]
+            },
+            {
+              "key": "betmgm",
+              "title": "BetMGM",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T08:55:00Z", "outcomes": [{"name": "Team A", "price": 1.49}, {"name": "Team B", "price": 2.75}]}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-08T10:00:00Z",
+      "gamma_markets": [
+        {
+          "id": "m-100",
+          "eventId": "e-100",
+          "question": "Will Team A beat Team B?",
+          "category": "Sports",
+          "active": true,
+          "closed": false,
+          "liquidityNum": 120000,
+          "gameStartTime": "2026-04-08T20:00:00Z",
+          "endDate": "2026-04-09T03:00:00Z",
+          "outcomes": ["Team A", "Team B"],
+          "outcomePrices": [0.60, 0.40]
+        }
+      ],
+      "reference_events": [
+        {
+          "id": "ref-1",
+          "sport_key": "soccer_epl",
+          "commence_time": "2026-04-08T20:00:00Z",
+          "home_team": "Team A",
+          "away_team": "Team B",
+          "bookmakers": [
+            {
+              "key": "draftkings",
+              "title": "DraftKings",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T09:55:00Z", "outcomes": [{"name": "Team A", "price": 1.43}, {"name": "Team B", "price": 2.9}]}]
+            },
+            {
+              "key": "fanduel",
+              "title": "FanDuel",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T09:55:00Z", "outcomes": [{"name": "Team A", "price": 1.45}, {"name": "Team B", "price": 2.85}]}]
+            },
+            {
+              "key": "betmgm",
+              "title": "BetMGM",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T09:55:00Z", "outcomes": [{"name": "Team A", "price": 1.44}, {"name": "Team B", "price": 2.88}]}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-08T11:00:00Z",
+      "gamma_markets": [
+        {
+          "id": "m-100",
+          "eventId": "e-100",
+          "question": "Will Team A beat Team B?",
+          "category": "Sports",
+          "active": true,
+          "closed": false,
+          "liquidityNum": 120000,
+          "gameStartTime": "2026-04-08T20:00:00Z",
+          "endDate": "2026-04-09T03:00:00Z",
+          "outcomes": ["Team A", "Team B"],
+          "outcomePrices": [0.62, 0.38]
+        }
+      ],
+      "reference_events": [
+        {
+          "id": "ref-1",
+          "sport_key": "soccer_epl",
+          "commence_time": "2026-04-08T20:00:00Z",
+          "home_team": "Team A",
+          "away_team": "Team B",
+          "bookmakers": [
+            {
+              "key": "draftkings",
+              "title": "DraftKings",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T10:55:00Z", "outcomes": [{"name": "Team A", "price": 1.39}, {"name": "Team B", "price": 3.05}]}]
+            },
+            {
+              "key": "fanduel",
+              "title": "FanDuel",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T10:55:00Z", "outcomes": [{"name": "Team A", "price": 1.41}, {"name": "Team B", "price": 2.98}]}]
+            },
+            {
+              "key": "betmgm",
+              "title": "BetMGM",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T10:55:00Z", "outcomes": [{"name": "Team A", "price": 1.4}, {"name": "Team B", "price": 3.0}]}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-08T12:00:00Z",
+      "gamma_markets": [
+        {
+          "id": "m-100",
+          "eventId": "e-100",
+          "question": "Will Team A beat Team B?",
+          "category": "Sports",
+          "active": true,
+          "closed": false,
+          "liquidityNum": 120000,
+          "gameStartTime": "2026-04-08T20:00:00Z",
+          "endDate": "2026-04-09T03:00:00Z",
+          "outcomes": ["Team A", "Team B"],
+          "outcomePrices": [0.64, 0.36]
+        }
+      ],
+      "reference_events": [
+        {
+          "id": "ref-1",
+          "sport_key": "soccer_epl",
+          "commence_time": "2026-04-08T20:00:00Z",
+          "home_team": "Team A",
+          "away_team": "Team B",
+          "bookmakers": [
+            {
+              "key": "draftkings",
+              "title": "DraftKings",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T11:55:00Z", "outcomes": [{"name": "Team A", "price": 1.43}, {"name": "Team B", "price": 2.9}]}]
+            },
+            {
+              "key": "fanduel",
+              "title": "FanDuel",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T11:55:00Z", "outcomes": [{"name": "Team A", "price": 1.44}, {"name": "Team B", "price": 2.88}]}]
+            },
+            {
+              "key": "betmgm",
+              "title": "BetMGM",
+              "markets": [{"key": "h2h", "last_update": "2026-04-08T11:55:00Z", "outcomes": [{"name": "Team A", "price": 1.42}, {"name": "Team B", "price": 2.92}]}]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

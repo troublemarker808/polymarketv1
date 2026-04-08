@@ -1,0 +1,1 @@
+"""Strategy-facing pure logic."""
